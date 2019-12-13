@@ -1,0 +1,507 @@
+{
+	"info": {
+		"_postman_id": "283f0791-d479-4f32-9c7e-ab401c26bb63",
+		"name": "测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:2019/deploy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contractName",
+							"value": "Agency",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/deploy",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"deploy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/addCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contract",
+							"value": "Agency",
+							"type": "text"
+						},
+						{
+							"key": "addr",
+							"value": "0x11c1e8248f54398b6f8fbc9d28468dba222b75dd",
+							"type": "text"
+						},
+						{
+							"key": "func",
+							"value": "addCompany",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "0x02",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "B",
+							"type": "text"
+						},
+						{
+							"key": "cash",
+							"value": "500",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "10",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/addCompany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"addCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/transaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contract",
+							"value": "Agency",
+							"type": "text"
+						},
+						{
+							"key": "addr",
+							"value": "0x11c1e8248f54398b6f8fbc9d28468dba222b75dd",
+							"type": "text"
+						},
+						{
+							"key": "func",
+							"value": "transaction",
+							"type": "text"
+						},
+						{
+							"key": "debtor",
+							"value": "0x01",
+							"type": "text"
+						},
+						{
+							"key": "borrower",
+							"value": "0x02",
+							"type": "text"
+						},
+						{
+							"key": "cashNum",
+							"value": "50",
+							"type": "text"
+						},
+						{
+							"key": "limitTime",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/transaction",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/getCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contract",
+							"value": "Agency",
+							"type": "text"
+						},
+						{
+							"key": "addr",
+							"value": "0x11c1e8248f54398b6f8fbc9d28468dba222b75dd",
+							"type": "text"
+						},
+						{
+							"key": "func",
+							"value": "getCompany",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "0x02\n",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "A",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cash",
+							"value": "100",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/getCompany",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"getCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/transfer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contract",
+							"value": "Agency",
+							"type": "text"
+						},
+						{
+							"key": "addr",
+							"value": "0x81318632e3bb36c23e21c2a131aa9f3017f039d6",
+							"type": "text"
+						},
+						{
+							"key": "func",
+							"value": "transfer",
+							"type": "text"
+						},
+						{
+							"key": "oriDebtor",
+							"value": "0x01",
+							"type": "text"
+						},
+						{
+							"key": "newDebtor",
+							"value": "0x03",
+							"type": "text"
+						},
+						{
+							"key": "borrower",
+							"value": "0x02",
+							"type": "text"
+						},
+						{
+							"key": "cashNum",
+							"value": "16",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/transfer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/saleReceipt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contract",
+							"value": "Agency",
+							"type": "text"
+						},
+						{
+							"key": "addr",
+							"value": "0x11c1e8248f54398b6f8fbc9d28468dba222b75dd",
+							"type": "text"
+						},
+						{
+							"key": "func",
+							"value": "saleReceipt",
+							"type": "text"
+						},
+						{
+							"key": "buyerAddr",
+							"value": "0x01",
+							"type": "text"
+						},
+						{
+							"key": "cashNum",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/saleReceipt",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"saleReceipt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/repayment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contract",
+							"value": "Agency",
+							"type": "text"
+						},
+						{
+							"key": "addr",
+							"value": "0x11c1e8248f54398b6f8fbc9d28468dba222b75dd",
+							"type": "text"
+						},
+						{
+							"key": "func",
+							"value": "repayment",
+							"type": "text"
+						},
+						{
+							"key": "payerAddr",
+							"value": "0x02",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/repayment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"repayment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/getReceipt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "contract",
+							"value": "Agency",
+							"type": "text"
+						},
+						{
+							"key": "addr",
+							"value": "0x81318632e3bb36c23e21c2a131aa9f3017f039d6",
+							"type": "text"
+						},
+						{
+							"key": "func",
+							"value": "getReceipt",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "0x02",
+							"type": "text"
+						},
+						{
+							"key": "index",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "cash",
+							"value": "100",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/getReceipt",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"getReceipt"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
