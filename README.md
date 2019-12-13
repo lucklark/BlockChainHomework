@@ -1,1 +1,4 @@
 这是区块链大作业仓库
+front_end为前端代码，通过vue的iview-admin模版代码进行编写前端页面，server为后端代码，通过node.js-SDK中的API来进行后端的实现。
+运行时需要在文件下执行npm install指令后，对于前端直接通过npm run dev来运行前端页面
+对于后端通过进入子目录packages下通过node run.js运行服务端，不过要注意对于nodes的链端启动
